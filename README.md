@@ -20,7 +20,7 @@ The system is built upon a modular design with the following characteristics:
 - **ALU (ULA):** Synchronous Arithmetic Logic Unit supporting arithmetic and bitwise operations.
 - **Control Unit:** Moore FSM handling instruction cycles and handshaking signals (`ack`).
 
-## ⚙️ Instruction Set Architecture (ISA)
+## Instruction Set Architecture (ISA)
 The processor supports a custom set of 8-bit instructions:
 
 | Mnemonic | Function | Description |
@@ -42,7 +42,7 @@ The control unit implements a Moore Machine with the following states:
 3.  **Decode/Ex:** Branches to specific execution states (LDR, Arithmetic, or Logic).
 4.  **Write-Back:** Writes the result back to the Register File.
 
-## 🛠 Hardware Implementation (DE10-Lite)
+## Hardware Implementation (DE10-Lite)
 The project is synthesized for the **Terasic DE10-Lite** board (Intel MAX 10 FPGA).
 
 | Component | DE10-Lite Pin | Function |
